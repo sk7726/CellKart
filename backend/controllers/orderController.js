@@ -130,7 +130,7 @@ Shipping Address: ${order.shippingInfo.address}, ${order.shippingInfo.city}
 
 If you have any questions or concerns regarding your order, feel free to reach out to our customer support team at no.reply.cellkart@gmail.com or +1 (555) 555-1234. We are here to assist you.
 
-Thank you for choosing [Your Ecommerce Website]. We appreciate you and hope you enjoy your new purchase.
+Thank you for choosing CellKart. We appreciate you and hope you enjoy your new purchase.
 
 Best regards,
 
@@ -139,7 +139,7 @@ CellKart`;
   try {
     await sendEmail({
       email: uEmail,
-      subject: `Order Delivered!🙂`,
+      subject: `Order Delivered!😍`,
       message,
     });
 

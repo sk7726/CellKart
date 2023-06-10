@@ -35,7 +35,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   
   As a registered user, you now have access to a wide range of the latest smartphones and accessories. Enjoy a seamless shopping experience, exclusive deals, and top-notch customer support.
   
-  Explore our collection at [website URL]. If you have any questions, contact us at no.reply.cellkart@gmail.com or +1 (555) 555-1234.
+  Explore our collection at https://cellkart.onrender.com. If you have any questions, contact us at no.reply.cellkart@gmail.com or +1 (555) 555-1234.
   
   Happy shopping!
   
@@ -120,12 +120,12 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     "host"
   )}/password/reset/${resetToken}`;
 
-  const message = `Your password reset token is:- \n\n ${resetPasswordUrl} \n\n if you have not requested this email, please ignore it.`;
+  const message = `Your password reset token is:- \n\n ${resetPasswordUrl} \n\n if you have not requested this email, please ignore it. \n Best regards, \n CellKart Team`;
 
   try {
     await sendEmail({
       email: user.email,
-      subject: `Ecommerce password Recovery`,
+      subject: `Password Recovery!🙂`,
       message,
     });
 
@@ -193,11 +193,11 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
   await user.save();
 
   //Sending email after Password Change
-  const message = `Your Password is Successfully Changed \n\n if it is not done by you, Please contact admin.`;
+  const message = `Your Password is Successfully Changed \n\n if it is not done by you, Please contact admin. \n Best regards, \n CellKart Team`;
   try {
     await sendEmail({
       email: user.email,
-      subject: `Ecommerce password changed`,
+      subject: `Password changed!😇`,
       message,
     });
 
