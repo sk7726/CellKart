@@ -1,0 +1,116 @@
+footer {
+    margin-top: 1vmax;
+    padding: 1vmax;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1vmax;
+    letter-spacing: 2px;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: "Roboto";
+    letter-spacing: 18px;
+    color: #f7f30e;
+  }
+  .midFooter > p {
+    max-width: 60%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.5vmax;
+  }
+  
+  .rightFooter > a:hover {
+    color: #eb4034;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer{
+      width: 95%;
+    }
+    .leftFooter {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 1.5vmax;
+    }
+    .leftFooter > h4 {
+      font-family: "Roboto";
+      font-size: 1.2vmax;
+      letter-spacing: 1px;
+    }
+    .leftFooter > p {
+      text-align: center;
+      font-size: 1.3vmax;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .leftFooter > img {
+      width: 10vmax;
+      margin: 1vmax;
+      cursor: pointer;
+    }
+
+    .midFooter > h1 {
+      font-size: 2vmax;
+      padding-left: 3vmax;
+      letter-spacing: 6px;
+    }
+    .midFooter > p {
+      max-width: 60%;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      margin: 1vmax auto;
+      font-size: 1.7vmax;
+    }
+  }
+  

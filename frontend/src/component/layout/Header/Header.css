@@ -1,0 +1,231 @@
+.speedDial {
+  position: absolute;
+  right: 1vmax;
+  top: 0.2vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2874f0;
+  height: 50px;
+  padding: 5px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: 10px;
+  font-size: 28px;
+  padding-top: 1vmax;
+  padding-left: 10vmax;
+  font-family: roboto;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.navbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 600px;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 20px;
+  font-family: roboto;
+
+  /* border-radius: 4px; */
+}
+
+.search-button {
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  /* margin-left: 10px; */
+  font-size: 20px;
+  font-family: roboto;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: rgb(31, 31, 31);
+}
+/* Actions */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  padding-right: 65px;
+}
+
+.navbar__act{
+  visibility: hidden;
+}
+.login-button,
+.signup-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  padding-left: 10px;
+  margin-left: 5px;
+  font-size: 25px;
+  font-family: roboto;
+
+  cursor: pointer;
+}
+
+.cart-component {
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  font-size: 25px;
+  font-family: roboto;
+
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ff3b30;
+  color: #ffffff;
+  border-radius: 100%;
+  padding: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 0.5vmax;
+  }
+
+  .speedDialIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
+ 
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+    /* width: 50vmin; */
+  }
+
+  .navbar__logo .logo {
+    font-size: 17px;
+    cursor: pointer;
+    padding-left: 0;
+  }
+
+  .navbar__search {
+    flex-grow: 1;
+    margin: 10px;
+    width: 100%;
+    
+  }
+
+  .search-bar {
+    width: 50%;
+    padding: 8px;
+    font-size: 10px;
+    border: none;
+    width: 160px;
+    border-radius: 4px;
+  }
+
+  .search-button {
+    padding: 8px;
+    font-size: 10px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    display: none;
+    
+  }
+
+  .navbar__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__act{
+    visibility: visible;
+  }
+  .login-btn{
+    font-size: 2.7vmax;
+    flex-grow: 1;
+    padding: 2px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 22px;
+  }
+  .login-button {
+    padding: 8px;
+    font-size: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 50px;
+    display: none;
+  }
+
+  .cart-component {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    margin-right: 5px;
+    margin-left: 10px;
+    display: none;
+  }
+
+
+  .cart-count {
+    background-color: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+    display: none;
+  }
+}
